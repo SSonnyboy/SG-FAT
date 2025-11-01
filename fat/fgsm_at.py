@@ -185,17 +185,12 @@ class FGSM_AT(ATBase):
                 )
 
                 loss_ce = soft_cross_entropy(output, soft_targets)
-                if torch.isnan(loss_ce):
-                    output = torch.clamp(output, -100, 100)
-                    loss_ce = soft_cross_entropy(output, soft_targets)
-                if torch.isnan(loss_reg):
-                    loss = loss_ce
-                else:
-                    loss = loss_ce + self.lamda * loss_reg
-                    # loss = loss_ce + cur_lambda * loss_reg
+                loss = loss_ce + self.lamda * loss_reg
                     
                 opt.zero_grad()
                 loss.backward()
+                # avoid gradient explosion
+                torch.nn.utils.clip_grad_norm_(self.model.parameters(), max_norm=1)
                 opt.step()
 
                 grad_norm = torch.norm(grad_x, p=1)

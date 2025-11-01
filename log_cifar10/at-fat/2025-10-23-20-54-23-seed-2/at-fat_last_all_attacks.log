@@ -1,0 +1,6 @@
+Clean Accuracy: 78.60%
+PGD-10 Accuracy: 57.90%
+PGD-20 Accuracy: 57.46%
+PGD-50 Accuracy: 57.38%
+CW Accuracy: 51.16%
+
