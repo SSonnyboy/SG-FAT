@@ -213,8 +213,9 @@ class FGSM_AT_Feats(ATBase):
 
                 opt.zero_grad()
                 loss.backward()
-                # avoid gradient explosion
-                torch.nn.utils.clip_grad_norm_(self.model.parameters(), max_norm=1)
+                if epoch < 1:
+                    # Clip gradients to prevent explosion
+                    torch.nn.utils.clip_grad_norm_(self.model.parameters(), max_norm=1)
                 opt.step()
 
                 grad_norm = torch.norm(grad_x, p=1)
