@@ -16,14 +16,14 @@ def tinynet_run(seed=0, device=0, alpha=0.8, name="test", T=2.0, label_smoothing
     )
 
     train_set = TinyImageNet200(
-        "/home/chenyu/ADV/data",
+        "/home/xxxx/ADV/data",
         train=True,
         download=True,
         transform=train_transform_tiny_imagenet,
     )
 
     test_set = TinyImageNet200(
-        "/home/chenyu/ADV/data", train=False, download=True, transform=test_transform
+        "/home/xxxx/ADV/data", train=False, download=True, transform=test_transform
     )
 
     train_loader = torch.utils.data.DataLoader(

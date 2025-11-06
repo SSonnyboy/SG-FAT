@@ -15,10 +15,10 @@ def cifar100_run(seed=0, device=0, alpha=0.6, name="test", label_smoothing=0.8, 
     )
 
     train_set = CIFAR100(
-        "/home/chenyu/ADV/data", train=True, download=True, transform=train_transform
+        "/home/xxxx/ADV/data", train=True, download=True, transform=train_transform
     )
     test_set = CIFAR100(
-        "/home/chenyu/ADV/data", train=False, download=True, transform=test_transform
+        "/home/xxxx/ADV/data", train=False, download=True, transform=test_transform
     )
 
     train_loader = torch.utils.data.DataLoader(
