@@ -1,4 +1,4 @@
-Official implementation for our paper: **Navigated Fast Adversarial Training with Adaptive Target Perturbation**. 
+Official implementation for our paper: **Semantic-Guided Fast Adversarial Training via Class Relationship Exploitation**. 
 
 
 ## Environment settings
