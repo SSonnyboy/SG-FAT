@@ -15,6 +15,7 @@ Official implementation for our paper: **Semantic-Guided Fast Adversarial Traini
 ./main.sh  # for train
 ./test.sh  # for test
 ```
+
 ## Citation
 
 If you find this work useful for your research, please consider citing our paper:
@@ -23,8 +24,7 @@ If you find this work useful for your research, please consider citing our paper
 @inproceedings{chen2026SGFAT,
   title={Semantic-Guided Fast Adversarial Training via Class Relationship Exploitation},
   author={Yu Chen, Ke Wang, Jinwei Chi, Fan Yang, Qiang Xu and Honghao Wei},
-  booktitle={Proceedings of the 2026 International Conference on Mul-
-timedia Retrieval},
+  booktitle={Proceedings of the 2026 International Conference on Multimedia Retrieval},
   year={2026}
 }
 ```
