@@ -1,5 +1,7 @@
 Official implementation for our paper: **Semantic-Guided Fast Adversarial Training via Class Relationship Exploitation**. (ICMR'26)
 
+🎉 Our work has been accepted for ICMR 2026!
+
 ## Environment settings
 
 - OS: Ubuntu 20.04.3
